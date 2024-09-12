@@ -1,0 +1,90 @@
+body{
+      background-color: 	#e0e8ff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "Red Hat Display", system-ui;
+      font-size: 16px;
+    }
+
+    #title-card{
+      padding : 5px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+    #offer{
+      font-weight: lighter;
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    #container{
+      background-color: white;
+      height: 600px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      flex-basis: content;
+      border-radius: 4%;
+      justify-content: center;
+      align-items: center;
+    }
+    .image{
+      width: 100%;
+      border-top-left-radius: 4%;
+      border-top-right-radius: 4%;
+    }
+    #plan{
+      display: flex;
+      gap: 40px;
+      justify-content: space-around;
+      padding: 30px;
+    }
+    #music{
+      display: flex;
+      justify-content: center;
+    }
+    #annual-plan{
+      text-align: center;
+      font-weight: lighter;
+      text-align: center;
+    }
+    span{
+      font-weight: 600;
+    }
+    
+    change{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #proceed-button{
+      background-color: hsl(223, 76%, 38%);
+      color: white;
+      width: 100%;
+      padding: 10px;
+      border-radius: 10%;
+      text-align: center;
+      font-weight: bolder;
+      box-shadow: 5px 10px 10px lightgray;
+      
+    }
+    #cancel{
+      color: gray;
+      font-weight: bold;
+      padding: 20px;
+    }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
