@@ -16,20 +16,91 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      body {
-        background-color: #e0e8ff;
+      body{
+        background-color: 	#e0e8ff;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
+        height: 100vh;
+        font-family: "Red Hat Display", system-ui;
+        font-size: 16px;
       }
-      #container {
+
+      #title-card{
+        padding : 5px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+      #offer{
+        font-weight: lighter;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      p{
+        
+      }
+      #container{
+        background-color: white;
+        height: 600px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        flex-basis: content;
+        border-radius: 4%;
+        justify-content: center;
+        align-items: center;
+      }
+      .image{
+        width: 100%;
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+      }
+      #plan{
+        display: flex;
+        gap: 40px;
+        justify-content: space-around;
+        padding: 30px;
+      }
+      #music{
+        display: flex;
+        justify-content: center;
+      }
+      #annual-plan{
+        text-align: center;
+        font-weight: lighter;
+        text-align: center;
+      }
+      span{
+        font-weight: 600;
+      }
+      
+      change{
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      #tile {
-        justify-content: center;
-        align-items: center;
-        background-color: white;
+
+      #proceed-button{
+        background-color: hsl(223, 76%, 38%);
+        color: white;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10%;
+        text-align: center;
+        font-weight: bolder;
+        box-shadow: 5px 10px 10px lightgray;
+        
+      }
+      #cancel{
+        color: gray;
+        font-weight: bold;
+        padding: 20px;
       }
       .attribution {
         font-size: 11px;
@@ -42,10 +113,26 @@
   </head>
   <body>
     <div id="container">
-      <div id="tile">
-        Order Summary You can now listen to millions of songs, audiobooks, and
-        podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-        Proceed to Payment Cancel Order
+      <div class="image">
+        <img src="./images/illustration-hero.svg" alt="girl listens music" class="image">
+      </div>
+        
+      <div id="title-card">Order Summary</div> 
+        <div id="offer">You can now listen to millions of songs, audiobooks, and
+          podcasts on any device anywhere you like!</div> 
+            
+         
+
+      <div id="plan">
+        <div id="music"><img src="./images/icon-music.svg" alt="music note"></div>
+        <div id="annual-plan">
+          <span>Annual Plan</span><br/>
+            $59.99/year
+        </div>
+        <div id="change"><p><a href="">Change</a></p></div>
+      </div>
+      <a href=""><div id="proceed-button">Proceed to Payment</div></a>
+      <div id="cancel">Cancel Order</div>
       </div>
     </div>
 
